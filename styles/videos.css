@@ -1,0 +1,146 @@
+.container_videos{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,400px);
+    justify-content: center;
+    max-width: 100%;
+
+}
+
+.video-block{
+    padding: 0;
+    margin: 0;
+    width: 390px;
+    height: 300px;
+}
+
+.video-block__video{
+
+    position: relative;
+}
+
+.video-block__video img{
+    padding: 0;
+    margin: 0;
+    width:100%
+}
+.video-block .video .image-preview{
+    border-radius: 0;
+}
+
+.video-block__video__image-preview{
+    position: absolute;
+    height: 100%;
+    width: 390px;
+    top: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-block__video__image-preview i{
+    color: white;
+    cursor: pointer;
+}
+.video-block__video:hover .video-block__video__image-preview {
+    opacity: 1;
+
+}
+.description__name-video h2 {
+    cursor: pointer;
+}
+
+
+.video_preview img{
+    padding: 0;
+    margin: 0;
+    width:100%
+}
+
+.video-block__description{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 25%;
+    color: white;
+    background-color: #433451;
+    display: grid;
+    grid-template-areas:
+    "k a b b b b b b c";
+
+}
+
+.video-block__description img{
+    grid-area: a;
+    align-self: center;
+    cursor: pointer;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.description__name-video{
+    grid-area: b;
+    align-self: center;
+
+}
+.description__name-video h2{
+
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+
+    max-width: 150px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.description__name-video a{
+    text-decoration: none;
+    color: #999999;
+
+    max-width: 30px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+}
+.video-block__description i{
+    grid-area: c;
+    align-self: center;
+    cursor: pointer;
+}
+
+.video-live{
+    background-color: red;
+    height: 20px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.video-live:hover{
+    height: 22px;
+    width: 42px;
+}
+.count-views{
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    background-color: #222222;
+    cursor: pointer;
+}
